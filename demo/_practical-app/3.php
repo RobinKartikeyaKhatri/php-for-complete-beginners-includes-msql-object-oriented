@@ -16,14 +16,66 @@
 
 /*  Step1: Make an if Statement with elseif and else to finally display string saying, I love PHP
 
-
-
 	Step 2: Make a forloop  that displays 10 numbers
-
 
 	Step 3 : Make a switch Statement that test againts one condition with 5 cases
 
  */
+
+	$favoriteProgrammingLanguage = "PHP";
+
+	if($favoriteProgrammingLanguage == "Java")
+	{
+		echo "I don't love Java that much serously ;)";
+	}
+	elseif($favoriteProgrammingLanguage == "C++")
+	{
+		echo "I hate C++ :(";
+	}
+	else
+	{
+		echo "I love PHP";
+	}
+
+	echo "<br/><br/>";
+
+	$numbers = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+	foreach ($numbers as $value) 
+	{
+		echo $value . "<br/>";
+	}
+
+	echo "<br/><br/>";
+
+	$placeInClass = 100;
+
+	switch ($placeInClass) 
+	{
+		case 1:
+			echo "He got 1st place in class";
+		break;
+
+		case 2:
+			echo "He got 2nd place in class";
+		break;
+
+		case 3:
+			echo "He got 3rd place in class";
+		break;
+
+		case 4:
+			echo "He got 4th place in class";
+		break;
+
+		case 5:
+			echo "He got 5th place in class";
+		break;
+		
+		default:
+			echo "He's failed! :(";
+		break;
+	}
 
 	
 ?>
