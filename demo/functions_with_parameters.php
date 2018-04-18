@@ -37,6 +37,7 @@
             echo "Division of two numbers: " . $div . "<br/>";
         }
 
+        // Calling functions
         addNumbers(5, 5);
         substractNumbers(10, 5);
         multiplyNumbers(5, 4);
