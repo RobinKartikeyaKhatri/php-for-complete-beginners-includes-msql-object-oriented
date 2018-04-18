@@ -20,10 +20,24 @@
 
 	Step 2: Make a function that passes parameters and call it using parameter values
 
-
  */
 
-	
+		function calculation($num1, $num2)
+		{
+			return $num1 + $num2;
+		}
+
+		$result = calculation(12, 8);
+		echo $result;
+
+		echo "<br/><br/>";
+
+		function sayHello($message)
+		{
+			echo $message;
+		}
+
+		sayHello("Hello everyone :)");
 ?>
 
 
