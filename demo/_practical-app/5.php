@@ -25,6 +25,15 @@
 
  */
 
+echo ceil(4.3) . "<br/>";    // 5
+
+echo strtolower("ROBIN KARTIKEYA KHATRI");
+
+echo "<br/>";
+
+$element = array("Apple", "Banana", "Cherry", "Durian", "Apple", "Cherry", "Apple");
+print_r(array_count_values($element));
+
 	
 ?>
 
