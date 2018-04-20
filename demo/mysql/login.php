@@ -19,6 +19,7 @@
 
     <div class="container">
         <div class="col-sm-6">
+        <h1 class="text-center">Create User</h1>
             <form action="" method="post">
                 <label for="username">Username</label>
                     <div class="form-group">
@@ -29,7 +30,7 @@
                     <div class="form-group">
                         <input type="password" name="password" class="form-control" id="password">
                 </div>
-                <input type="submit" value="Submit" name="submit" class="btn btn-primary">
+                <input type="submit" value="Create User" name="submit" class="btn btn-primary">
             </form>
         </div>
     </div>
