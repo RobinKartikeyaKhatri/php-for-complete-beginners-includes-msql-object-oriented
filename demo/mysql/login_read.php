@@ -11,7 +11,7 @@
 
     <div class="container">
         <div class="col-sm-6">
-
+        <h1 class="text-center">Show Users</h1>
             <?php
 
                 $conn = mysqli_connect('localhost', 'root', '', 'loginapp');
