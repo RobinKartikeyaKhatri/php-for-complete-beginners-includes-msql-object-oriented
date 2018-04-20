@@ -20,6 +20,7 @@ updateUsers();
 
     <div class="container">
         <div class="col-sm-6">
+        <h1 class="text-center">Update Users</h1>
             <form action="" method="post">
                 <label for="username">Username</label>
                     <div class="form-group">
