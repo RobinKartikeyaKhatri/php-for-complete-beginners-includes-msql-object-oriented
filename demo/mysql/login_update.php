@@ -28,7 +28,7 @@
                     </div>
                 <label for="id">IDs</label>
                     <div class="form-group">
-                        <select name="id" class="form-control" id="id">
+                        <select name="id" class="form-control">
                             <option value=""></option>
                         </select>
                     </div>
