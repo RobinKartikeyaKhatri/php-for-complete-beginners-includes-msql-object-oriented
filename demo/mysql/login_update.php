@@ -1,3 +1,7 @@
+<?php
+include("db.php");
+include("functions.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,11 +15,6 @@
 
     <div class="container">
         <div class="col-sm-6">
-            <?php
-                include("db.php");
-
-
-            ?>
             <form action="" method="post">
                 <label for="username">Username</label>
                     <div class="form-group">
@@ -29,7 +28,9 @@
                 <label for="id">IDs</label>
                     <div class="form-group">
                         <select name="id" class="form-control">
-                            <option value=""></option>
+                        
+                        <?php showAllData(); ?>
+                        
                         </select>
                     </div>
                 <input type="submit" value="Update" name="submit" class="btn btn-primary">
