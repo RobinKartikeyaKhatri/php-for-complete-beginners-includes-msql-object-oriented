@@ -77,4 +77,29 @@ function createUser()
     }
 }
 
+function deleteUser()
+{
+    global $conn;
+
+    if(isset($_POST['delete']))
+    {
+        //$username = $_POST['username'];
+        //$password = $_POST['password'];
+        $id = $_POST['id'];
+
+        $query = "DELETE FROM users WHERE id = $id LIMIT 1";
+        $result = mysqli_query($conn, $query);
+
+        if($result)
+        {
+            echo "<p class='text-danger text-center'>Record deleted successfuly.</p>";
+        }
+        else
+        {
+            echo "<p class='text-primary text-center'>Unable to delete record.</p>";
+            die("Query failed" . mysqli_error($conn));
+        }
+    }
+}
+
 ?>
