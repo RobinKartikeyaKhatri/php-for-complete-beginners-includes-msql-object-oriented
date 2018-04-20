@@ -6,10 +6,11 @@
 
         if(!empty($username) && !empty($password))
         {
-            $conn = mysqli_connect('localhost', 'root', '', 'loginapp');
-
-            echo $username . "<br/>";
-            echo $password . "<br/>";
+                $conn = mysqli_connect('localhost', 'root', '', 'loginapp');
+        }
+        else
+        {
+            echo "<h3 class='text-danger text-center'>Please enter a username and password</h3>";
         }
     }
 ?>
