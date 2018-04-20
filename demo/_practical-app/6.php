@@ -21,9 +21,17 @@
 
  */
 
+ if(isset($_POST['submit']))
+ {
+	 echo "I made it this far. :)";
+ }
+
 	
 ?>
 
+<form action="" method="post">
+	<input type="submit" value="Submit" name="submit">
+</form>
 
 </article><!--MAIN CONTENT-->
 <?php include "includes/footer.php" ?>
