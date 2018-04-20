@@ -6,11 +6,27 @@
 
         if(!empty($username) && !empty($password))
         {
-                $conn = mysqli_connect('localhost', 'root', '', 'loginapp');
+            $conn = mysqli_connect('localhost', 'root', '', 'loginapp');
+
+            $query = "INSERT INTO users(username, password)";
+            $query .= "VALUES('$username', '$password')";
+
+            $result = mysqli_query($conn, $query);
+
+            if($result)
+            {
+                echo "<p class='text-success text-center'>Record added to database successfuly.</p>";
+            }
+            else
+            {
+                echo "<p class='text-danger text-center'>Recored does not added to database.</p>";
+                die("Query failed!" . mysqli_error($conn));
+            }
         }
         else
         {
             echo "<h3 class='text-danger text-center'>Please enter a username and password</h3>";
+            
         }
     }
 ?>
