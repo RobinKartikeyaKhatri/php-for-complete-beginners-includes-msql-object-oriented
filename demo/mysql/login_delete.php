@@ -20,6 +20,7 @@ deleteUser();
 
     <div class="container">
         <div class="col-sm-6">
+        <h1 class="text-center">Delete Users</h1>
             <form action="" method="post">
                 <label for="id">IDs</label>
                     <div class="form-group">
