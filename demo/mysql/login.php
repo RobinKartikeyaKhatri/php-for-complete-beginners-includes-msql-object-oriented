@@ -1,3 +1,19 @@
+<?php
+    if (isset($_POST['submit'])) 
+    {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        if(!empty($username) && !empty($password))
+        {
+            $conn = mysqli_connect('localhost', 'root', '', 'loginapp');
+
+            echo $username . "<br/>";
+            echo $password . "<br/>";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +26,7 @@
 <body>
 
     <div class="container">
-        <div class="col-xs-6">
+        <div class="col-sm-6">
             <form action="" method="post">
                 <label for="username">Username</label>
                     <div class="form-group">
