@@ -10,19 +10,27 @@ class Car
 
     function moveWheels()
     {
-        $this->wheels = 8;
+        echo $this->wheels;
     }
 }
 
 $bmw = new Car();
 
-//$bmw->wheels = 8; // assign a new value to class property via object of the class
+class Truck extends Car
+{
 
-echo $bmw->wheels . "<br/>";
-echo $bmw->hood . "<br/>";
-echo $bmw->engine . "<br/>";
-echo $bmw->doors . "<br/>";
+}
 
+$tacoma = new Truck;
+
+$tacoma->moveWheels();
+
+echo "<br/>";
+
+echo $tacoma->wheels . "<br/>";
+echo $tacoma->hood . "<br/>";
+echo $tacoma->engine . "<br/>";
+echo $tacoma->doors . "<br/>";
 
 
 ?>
