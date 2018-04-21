@@ -3,18 +3,49 @@
 class Car
 {
 
-    var $wheels = 4;
-    var $hood = 1;
-    var $engine = 1;
-    var $doors = 4;
+    public $wheels = 4;
+    private $hood = 1;
+    protected $engine = 1;
+    //$doors = 4;
 
-    function __construct()
+    function showProperties()
     {
-        echo $this->wheels = 10;
+        echo $this->wheels . "<br/>";
+        echo $this->hood . "<br/>";
+        echo $this->engine . "<br/>";
+    }
+
+    function showPrivateProperty()
+    {
+        echo $this->hood . "<br/>";
     }
 }
 
 $bmw = new Car();
+
+$bmw->showProperties();
+
+echo "<br/><br/>";
+
+echo $bmw->wheels . "<br/>";
+//echo $bmw->hood . "<br/>";
+//echo $bmw->engine . "<br/>";
+
+class Truck extends Car
+{
+    function showEngineProperty()
+    {
+        echo $this->engine . "<br/>";
+    }
+}
+
+$tacoma = new Truck;
+
+$tacoma->showEngineProperty();
+
+echo "<br/><br/>";
+
+$bmw->showPrivateProperty();
 
 
 
