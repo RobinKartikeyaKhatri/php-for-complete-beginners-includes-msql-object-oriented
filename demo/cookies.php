@@ -6,8 +6,6 @@ $expirationTime = time() + (60 * 60 * 24 * 7);
 
 setcookie($name, $value, $expirationTime);
 
-print_r($_COOKIE);
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,6 +16,16 @@ print_r($_COOKIE);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <?php
 
+        if (isset($_COOKIE["Robin"])) 
+        {
+           echo $grabCookieValue1 = $_COOKIE["Robin"];
+        }
+        else
+        {
+            $grabCookieValue1 = "";
+        }
+    ?>
 </body>
 </html>
