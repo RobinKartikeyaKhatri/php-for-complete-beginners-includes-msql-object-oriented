@@ -27,6 +27,21 @@
 		Step 4 - Connect to Database and read data
 
 */
+
+	$connection = mysqli_connect("localhost", "root", "", "practice_section_7");
+
+	$query = "SELECT * FROM weeks_name";
+
+	$result = mysqli_query($connection, $query);
+
+	if($result)
+	{
+		while ($row = mysqli_fetch_array($result)) 
+		{
+			echo $id = $row['id'] . "<br/>";
+			echo $week_name = $row['week_name'] . "<br/>";
+		}
+	}
 	
 	?>
 
