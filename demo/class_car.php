@@ -8,22 +8,10 @@ class Car
     }
 }
 
-// if (class_exists('Car')) 
-// {
-//     echo "Yes class exists";
-// }
-// else
-// {
-//     echo "Class does not exists";
-// }
+$bmw = new Car();
+$tacoma = new Car();
 
-if (method_exists("Car", "moveWheels")) 
-{
-    echo "Yes method exists";
-}
-else
-{
-    echo "No method does not exsits";
-}
+$bmw->moveWheels();
+$tacoma->moveWheels();
 
 ?>
