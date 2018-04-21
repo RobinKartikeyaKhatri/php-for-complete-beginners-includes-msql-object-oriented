@@ -8,29 +8,15 @@ class Car
     var $engine = 1;
     var $doors = 4;
 
-    function moveWheels()
+    function __construct()
     {
-        echo $this->wheels;
+        echo $this->wheels = 10;
     }
 }
 
 $bmw = new Car();
 
-class Truck extends Car
-{
 
-}
-
-$tacoma = new Truck;
-
-$tacoma->moveWheels();
-
-echo "<br/>";
-
-echo $tacoma->wheels . "<br/>";
-echo $tacoma->hood . "<br/>";
-echo $tacoma->engine . "<br/>";
-echo $tacoma->doors . "<br/>";
 
 
 ?>
