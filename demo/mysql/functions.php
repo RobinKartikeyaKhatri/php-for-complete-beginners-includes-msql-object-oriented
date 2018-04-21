@@ -102,4 +102,20 @@ function deleteUser()
     }
 }
 
+function readUser()
+{
+    global $conn;
+
+    $query = "SELECT * FROM users";
+
+    $result = mysqli_query($conn, $query);
+
+    while ($row = mysqli_fetch_array($result)) 
+    {
+        echo $id = $row['id'] . "<br/>";
+        echo $username   = $row['username'] . "<br/>";
+        echo $password   = $row['password'] . "<br/>";
+    }
+}
+
 ?>
