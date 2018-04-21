@@ -22,8 +22,8 @@ function updateUsers()
     
     if (isset($_POST['update'])) 
     {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+        $username = mysqli_real_escape_string($conn, trim($_POST['username']));
+        $password = mysqli_real_escape_string($conn, trim($_POST['password']));
         $id = $_POST['id'];
 
         $query = "UPDATE users SET username = '$username', password = '$password' WHERE id = $id";
@@ -47,8 +47,8 @@ function createUser()
 
     if (isset($_POST['submit'])) 
     {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+        $username = mysqli_real_escape_string($conn, trim($_POST['username']));
+        $password = mysqli_real_escape_string($conn, trim($_POST['password']));
 
         if(!empty($username) && !empty($password))
         {
